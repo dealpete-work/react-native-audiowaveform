@@ -239,9 +239,10 @@ public class OGWaveView extends FrameLayout {
 
         @Override
         protected void onPostExecute(Float aFloat) {
-        if (aFloat != null) {
-            super.onPostExecute(aFloat);
-            mUIWave.updatePlayHead(aFloat);
+            if (aFloat != null) {
+                super.onPostExecute(aFloat);
+                mUIWave.updatePlayHead(aFloat);
+            }
         }
     }
 }
